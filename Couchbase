@@ -1,0 +1,15 @@
+@ Views are indexes.
+@ Map-reduce is used to create indexes. Map identifies the data and collection, process them and out put transformed
+value. Reduce takes output from map functions and perform numetic aggrations and calculations on them.
+@ Indexes are b tree on the disk
+@ Indexes are eventually consistant. But data is consistant.
+@ Quering ways -  Indexing,elastic search, N1ql is adhoc quering engine.
+@ N1ql - can query across relationship between docunments(json). N1ql is sql for json
+@ couchbase provides per docunment atomicity
+@ optimistic or pessimistic locking
+@ Optimistic locking  - Optimistic locking takes the “optimistic” view that data conflicts due to concurrent edits occur rarely, so it’s
+more important to allow concurrent edits.
+@ Pessimistic locking -  the application will need to explicitly get a lock on the document to guarantee
+exclusive user access. This can create dead locks. Time out can be use to break the dead locks
+@ CAS
+@ Atomic operations - get, set , with initial value, append and pretend.
