@@ -1,0 +1,47 @@
+    
+@ It all starts with researching about the domain . 
+@ It is always good to know as much as possible about the domain . 
+@ There are many types of databases out there .  Need to find a database that address the problem at hand. Many times database get a bad name just because they are used in a way they are not intended to be use. 
+@ Roles of a database user must be clearly identified . And privileges must be granted according to the need. 
+@ All the passwords that is stored in the database must be hashed.  
+@ Tables and columns in a table  must be named consistently . Table name should not consists of spaces. Table names should not have unnecessary prefixes. 
+@ It is always  a good idea to have a primary key to a table.
+@ Indexing is a good idea but use it with caution. Indexes will decrease speed with  which insert , update and deletion is done. Also indexing takes up space.  Use Tools that will determine the need of indexes on particular column instead of guesswork.
+@ One must be aware of all  the data types in the problem domain.  And use the appropriate data types when designing a database. 
+@ Whenever a select query is being used it is always a good idea not to use select *  from .... 
+@ Even though the application will handle data validations . Database should also enforce it. 
+@ There should be a procedure to backup a database as often as needed. This can often be achieved by a simple cron job or a taskscheduler. 
+@ It is always a must to document the database .  Entity relation or ER diagrams must be used properly . It is a good idea to start a database design with a ER diagram .  
+@ Placing a database and a web server on different machines will give security and performance increase. 
+@ Database replication can be used used for load balancing  wherever applicable. 
+@ I kept this for last database normalization.  Most performance issues are caused either by not normalizing the database or by too much normalization .  In my experience if the database is normalized to third normal form it is more enough in most cases. It is very important to know what works best. 
+
+Indexes broadly 2 types  --->  clustered  and non clustered index.
+ 
+Clustered Index
+1)       Example Primary key.
+2)      Common analogy index in a book.
+3)       There can only be one clustered index for a table.
+4)      Data is physically arranged or sorted  on the disk in a  particular order (sorted on index keys).
+Advantages.
+   Very efficient to retrieve data .
+ 
+Disadvantage.
+If there is a update on  a clustered index; database might have to move the entire row into a new position to keep the row sorted. So this will actually be a delete query followed by an insert. (hence PK or FK is usually right candidates for clustered index)
+ 
+Non clustered index
+1)      Common analogy Reference in a book
+2)      Stores all the index keys and its reference to the record on the disk .
+3)      Can have as many as we want on a particular table.
+4)      Doesn’t care about the order in which the record is stored.
+ 
+Advantages
+  If we make a indexes on columns on which mostly uses where clause or group by clause; performance of a query can be increased.
+ 
+Disadvantage
+1)      Slightly slower than clustered index.
+2)      Can take up lot of space.
+3)      Going back to analogy if every word in the book is put in a reference then , reference becomes as big as the book .
+4)      If the row is updated  or deleted the reference has to be updated as well.
+
+Hope everyone is following the above listed things . Please feel to disagree with me on any point. Lets see what everyone thinks.  
