@@ -1,0 +1,42 @@
+Rather than arguing which one is better I would like it to see it as which one is good for me. 
+Many big players are using both centralized and distributed version control systems for example
+
+Centralized :
+1)      Subversion : Apache, GNOME, GCC, Phyton, Samba, Django, Vim ..etc
+2)      CVS:  Emacs(GNU), FreeBsd..etc
+ 
+Distributed:
+1)      Git: Perl, Android, Fedora, Ruby on rails..etc
+2)      Merucrial : Mozilla, OpenJDK, Aptitude..etc
+3)      Darcs: GHC, Ion, ..etc
+4)      Bazzar:  Mysql, mailman..etc
+ 
+ 
+ 
+ 
+Centralized:
+1)       As the name implies there is one final Source(or master branch or release branch or central copy). Everyone will checkout and commit to the one final source.
+2)      More chances of conflicts when we are merging.
+3)      Need a reliable network connection.
+4)      If there are any changes that might break . Have to wait until all the breaking in fixed and then commit the changes.
+5)      Trunk usually has the latest version.
+6)      Can’t achieve Distributed version control.
+7)      Historically branching and merging is handled very poorly .  
+8)      Need to go to each branch to see the history.
+ 
+ 
+ 
+ 
+ 
+Distributed:
+1)      As name implies there is no final source. Everyone can have their own final source.  
+2)      Easy to share patches between one another. Less chance of merge conflict.
+3)      Eliminates the need of having a reliable network connection.
+4)      Can create the branches that need not be seen by other and breaking changes can be committed locally,  but no need to push them up stream.
+5)       Need to have a procedure in place that everyone should stick to in order to maintain a latest version .
+6)      Can achieve the centralized repo by always pushing the changes to a designated repo after every local commit.
+7)      Branching and merging of branches is handled much better .
+8)      Complete history of branches is preserved after merging.
+   
+  
+
