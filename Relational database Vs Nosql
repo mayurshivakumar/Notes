@@ -1,0 +1,42 @@
+
+Relational Database 
+Include MySql, Microsoft Sql server, Oracle(now oracle also has its own  Nosql), PostgreSql etc 
+As the name Implies ment usually to store data that are related . 
+Mostly uses Sql as their primary query language.  This can sometimes be an advantage if we decide to application form one Relational database to another. Of Course there is much to take into consideration and depends on how  Sql is used or abused in the application . Never the less the foundation exists. 
+Stores data in Tables with columns and rows.
+Good for data that is structured and has relation between them .
+Being relational and ACID (Traditionally this has been the focus of relational database) is a good thing but It might not be useful in all use cases and can add unnecessary overhead. 
+Relational database  was atleast designed to run on a single server.  This makes is a single point of failure.  Some people might argue mirroring database servers will solve the single point of failure.
+ACID Properties of Relational database is extremely  important and must have in case of applications for Banking,  stock market.. etc  
+
+
+
+
+NoSql
+Include MongoDB, BigTable, CouchDB etc 
+Data here might not be Related. 
+Not having a general language like  Sql might backfire sometimes. 
+Most NoSql databases are key value stores. They also has a concept of Document which is a collection of various fields of information. 
+Good for semi structured data . We can also use the database as a storage area for objects. 
+Some of the NoSql are designed to run on many nodes in a single datacenter. partial partition tolerance can be achieved by mirroring database clusters between multiple data centers.  Can achieve Low latency even when there are high number of reads and writes. 
+Some Nosql abandon consistency in favor of scalability and latency. 
+For social applications like Twitter it is ok the take a couple of minutes to show up a new feed.
+
+
+Finally  there is a two words that needs to be understood properly  CAP and ACID.
+
+CAP
+Proposed by Eric Brewer and proved my Seth Gilbert and Nancy Lynch.
+According to CAP  it is impossible for any shared-data system to guarantee simultaneously all of the following three properties: consistency, availability and partition tolerance
+Consistency in CAP means after data is been written, everyone who reads from the database will always see the latest version of data.  Which is very different from consistency in ACID.
+Availability can be accomplished through large number of servers acting as a single database through splitting data between various database nodes and replication. 
+Partition tolerance means data can be read and written even if some of the nodes are down.  In case of write when the node comes back up, they can get the writes they have missed. 
+
+
+ACID
+ACID stands for Atomicity, Consistency, Isolation, Durability.
+Atomicity means transaction either succeeds or fails. 
+Consistency means database is in  good state  both before and after a transaction . 
+Isolation means only one transaction can occur at a time 
+Durability means all the successful transactions made will persists even if there is a system failure.  
+
