@@ -1,0 +1,53 @@
+
+1) Open-source (way to go).
+2) Stores data in key value pairs.
+3) Almost all of them are in their “Second generation”.
+4) Big on Database Sharding .
+Casssandra :
+1) Also know as Apache Cassandra.
+2) This project came out of Facebook (I am not on facebook) in 2008.
+3) Open-source and Distributed database System.
+4) Here is the web site for more info http://cassandra.apache.org/
+Lucene :
+1) Written in Java.
+2) Open-source.
+3) Solr is a enterprise search service which has Rest like API. Put in documents which are called indexing via Xml, Jason, Csv or binary over HTTP and can Query them via HTTP GET and recive Xml, Json, Csv or Binary results how cool is that ?
+4) Here is the web site for more info http://lucene.apache.org/core/
+Riak :
+1) Open-source and Distributed database System.
+2) Suppose to be Architected for Availability, Fault-tolerance, Operational Simplicity and scalability.
+3) Provides Rest-ful API as well as a protocol buffers interface.
+4) Client libraries for Riak include Java, Python, Perl, Erlang, Ruby (wink wink I love Ruby), PHP and .NET (ya Microsoft )
+5) Here is the web site for more info http://basho.com/riak/
+CouchDB:
+1) Store data with JSON documents.
+2) Works with well with Web and mobile apps.
+3) Is a Open-source But has a commercial cousin CouchBase; which offers better sharding, incremental queries, better indices, and a more features.
+4) Here is the web site for more info http://couchdb.apache.org/
+Neo4J (reminds me of matrix) :
+1) Stores relationship between objects.
+2) Open-source.
+3) Is a Graph database. (Graph –records data in–> Nodes –which have–> Properties.)
+4) Here is the web site for more info http://www.neo4j.org/
+Oracle NoSQL (now that sounds interesting ):
+1) Is designed to provide Highly reliable, scalable and available.
+2) Oracle has a lot of documentation on it http://www.oracle.com/technetwork/products/nosqldb/overview/index.html
+MongoDB :
+1) Worked with is database on my previous projects. Liked it easy to learn .
+2) Written in C++.
+3) Is scalable, High-performance and Open-source.
+4) There is a lot of drivers available. I have used .Net as well as Ruby drivers.
+5) Here is the web site for more info http://www.mongodb.org/
+HBase:
+1) Goal of this Open-source, Distributed project is to host very large tables.
+2) Modeled after Google’s Bigtable.
+3) Has Java API for client access.
+4) Here is the web site for more info http://hbase.apache.org/
+BigTable:
+1) Google’s NoSql.
+2) Interesting link to it https://developers.google.com/appengine/docs/python/datastore/overview
+DynamoDB:
+1) Amazon’s NoSql.
+2) Has a very interesting Management console called AWS Management Console http://aws.amazon.com/console/.
+3) Here is the web site for more info http://aws.amazon.com/dynamodb/
+
