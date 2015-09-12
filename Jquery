@@ -1,0 +1,57 @@
+jQuery has been around for some time now and it has some very nice plugins and its API is documented very well. Tons of tutorials around.  There are many javascript libraries around such as Prototype, Mootools , YUI, Ext JS ,Dojo ,script.aculo.us,  UIZE , JQuery etc.
+
+Advantages and Disadvantages of using jQuery
+
+Advantages : 
+Easy to use.
+Large set of plugins and libraries.
+Very nicely documented and large number of tutorials. 
+It is lightweight compared to other javascript libraries.
+Large open source community. 
+Cleaner APIS
+Microsoft , google and other companies are actively encouraging it. Microsoft is making  it a part of official development platform. 
+Cross browser compatibility.
+Easy to extend. 
+Any thing to do with ajax is easy to use. $.ajax is a object and think about cool things we can do with it. 
+
+Disadvantages:
+Even though it is light weight, we need to have javascript file. 
+Can be argued that there is too much abstraction .  ( I am tempted to put  this in advantages)
+Dom centric. 
+AngularJs is just around the corner. If you ask me it is already time to use AngularJS wherever it makes sense. 
+
+There are many plugins jQuery has, some that stands out for me are as below. Using plugins increases the productivity but use it in a wrong way it will introduce you to hell.  
+
+jQuery validation plugin makes javascript validation very very easy, has a lot of built in stuff and can write your own customized validation rules with easy . Without getting into too much detail here is an example. 
+
+$("#fromname").validate({ 
+rules: { name: { required: true },
+ number :{ number: true, range: [2, 5 ] },
+ , customevalidation: { check: true }, 
+ } });
+
+
+
+// now this is cool
+$.validator.addMethod("customevalidation",function(value, element) 
+{ //check the condition and return true or false },"Error message" );
+
+
+Datepicker cool little plugin has nice calendar.
+
+Tablesorter Great plugin with really cool features. Works very well if the table or grid has less has less rows. 
+
+Autocomplete plugin  very nice and easy to use. 
+
+Sicky  is a nice one look it up. 
+
+Nanoscroller  Nice if you are a big Mac OS fan . 
+
+Pagination  Nice and easy to use.
+
+Calender  Have been using it on my personal projects it is very nice and robust.  
+
+
+Apart from this there are tons of plugins. If you can think of something in javascript there is a plugin already for it.   
+
+Every web developer should know about  jsfiddle.net if you dont check it out. Enough said.   
