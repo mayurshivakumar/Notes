@@ -1,3 +1,5 @@
+AMQP
+
 @ Exchange binds publisher to a queue.
 @ Common exchange types are fanout, direct exchange and topic
 @ Fanout - all messages go to all subcribing queue
