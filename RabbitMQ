@@ -4,3 +4,5 @@
 @ Direct exchange - publisher has a routing key and queue has a binding key . Message gets delivered to the queue
 when the routing key matches the binding key
 @ Topic - * and #, * can have only one word, # can hold one or more types.
+@ Stop the RabbitMQ - rabbitmqctl stop
+@ Start it in detached mode - rabbitmq-server -detached
