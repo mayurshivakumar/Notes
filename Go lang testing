@@ -1,0 +1,23 @@
+Install 
+go get github.com/smartystreets/goconvey
+npm install -g newman
+ 
+Goconvery 
+Runs tests when you save a file. 
+Start goconvery 
+can be started on different port and host as below
+goconvey -port=9000 -host=0.0.0.0
+hit the url and you should be able to see what is happening. 
+ 
+Newman 
+Tests api end points in PSN . 
+newman -c PSN.json.postman_collection -e Test.postman_environment
+ 
+PSN.json.postman_collection - tells what test to run 
+Test.postman_environment - what host to run the tests against. 
+PSN should be running in order for this to work . 
+ 
+Just regular go tests can be run but going into the directory 
+go test - will run all the tests in the dir.
+ To run a specific test 
+go test xxxx_test.go xxxx.go
