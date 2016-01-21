@@ -1,0 +1,16 @@
+@ Correct way to go git pull is 
+
+git fetch --all
+git pull --rebase origin master
+
+@  git stash
+
+git stash save "message you want."
+
+git stash list -- will show the list of stash you have stored. 
+stash@{0}: blah
+stash@{1}: blah
+stash@{2}: blah
+
+git stash pop stash@{n} -- to apply the stash and remove it from stash list. 
+git stash apply stash@{n} -- to apply the stash and keep it in the stash cache
