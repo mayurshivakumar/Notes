@@ -15,7 +15,7 @@ newman -c PSN.json.postman_collection -e Test.postman_environment
  
 PSN.json.postman_collection - tells what test to run 
 Test.postman_environment - what host to run the tests against. 
-PSN should be running in order for this to work . 
+
  
 Just regular go tests can be run but going into the directory 
 go test - will run all the tests in the dir.
