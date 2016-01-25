@@ -14,3 +14,6 @@ stash@{2}: blah
 
 git stash pop stash@{n} -- to apply the stash and remove it from stash list. 
 git stash apply stash@{n} -- to apply the stash and keep it in the stash cache
+
+git stash drop stash@{n} -- drops the stash
+git stash clear --  CLEARS ALL OF THE STASH 
