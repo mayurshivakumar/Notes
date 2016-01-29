@@ -2,6 +2,7 @@
 
 git fetch --all
 git pull --rebase origin master
+------------------------------------------------
 
 @  git stash
 
@@ -17,3 +18,8 @@ git stash apply stash@{n} -- to apply the stash and keep it in the stash cache
 
 git stash drop stash@{n} -- drops the stash
 git stash clear --  CLEARS ALL OF THE STASH 
+----------------------------------------------------
+
+@ you can abort a git merge with 
+git merge --abort
+---------------------------------------------------
