@@ -3,7 +3,11 @@
 git fetch --all
 git pull --rebase origin branch_name
 ------------------------------------------------
+@ Correct way to do git push 
 
+git push origin branch_name
+
+----------------------------------------------
 @  git stash
 
 git stash save "message you want."
