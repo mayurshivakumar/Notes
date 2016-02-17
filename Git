@@ -24,6 +24,10 @@ git stash drop stash@{n} -- drops the stash
 git stash clear --  CLEARS ALL OF THE STASH 
 ----------------------------------------------------
 
-@ you can abort a git merge with 
+@ You can abort a git merge with 
 git merge --abort
 ---------------------------------------------------
+
+@ To see a git remote 
+git remote -v
+git remote set-url "name" url-to-remote
