@@ -1,0 +1,31 @@
+Install 
+go get github.com/smartystreets/goconvey
+npm install -g newman
+ 
+Goconvery 
+Runs tests when you save a file. 
+Start goconvery 
+can be started on different port and host as below
+goconvey -port=port_number -host=0.0.0.0
+hit the url and you should be able to see what is happening.
+ 
+ 
+Newman 
+Tests api end points in PSN . 
+newman -c PSN.json.postman_collection -e Dev.postman_environment
+ 
+PSN.json.postman_collection - tells what test to run 
+Dev.postman_environment - what host to run the tests against. 
+PSN should be running in order for this to work . 
+For more information about Newman https://github.com/postmanlabs/newman
+ 
+Just regular go tests can be run by going into the directory 
+go test - will run all the tests in the dir.
+ To run a specific test 
+go test file_test.go file_worker.go
+ 
+Generate mocks using mockgen
+godep restore should get you both gomock and mockgen.  I had to install mockgen manually . Once installed you can  generate mocks using below command.
+ 
+mockgen -source=source_file.go -destination=destination_file_mock.go -package=package_name
+ mocks needs to be up to date. Else test will fail . You can run the above command to regenerate or recreate it.  
