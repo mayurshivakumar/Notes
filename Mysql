@@ -1,2 +1,2 @@
 @ To search for stored procedures in Myql Db
-select db,name from mysql.proc where name like 'stored_proc_name'
+select db,name from mysql.proc where name like '%stored_proc_name%'   (dont run this on Production)
